@@ -14,7 +14,9 @@ function checkNums(num1,num2){
 }
 
 checkNums(num1,num2) 
-  
 
+
+
+console.log('salut')
 
   
