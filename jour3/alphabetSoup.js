@@ -1,13 +1,22 @@
 'use strict'
 
+var str = 'hello';
+// console.log(tab);
+
+
 function alphabetSoup(str) {
 
-    var x = ' ';
+    var tab = str.split(' ');
 
-    for (var i = str.lenght - 1; i >= 0; i--) {
-        x += str[i];
+    var min = 97;
+    var max = 122;
+
+    for (var i = min; i >= max; i++) {
+
+        var index = String.fromCharCode(index)
+
     }
-    return x;
+    return index;
 }
 
-console.log(alphabetSoup('konexio'));
+console.log(alphabetSoup('hello'));
