@@ -1,5 +1,7 @@
 'use strict'
 
+// condition
+
 var str = 'hello';
 // console.log(tab);
 
