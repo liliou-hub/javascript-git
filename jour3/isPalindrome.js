@@ -1,35 +1,37 @@
 'use strict'
 
-//  transformer la string en array
-// creer une boucle qui parcours la longueur de l'array de gauche à droite 
-// une autre de droite à gauche 
+
+// creer une boucle qui parcours la longueur du string
+// condition
 // cree un bolleen
 
 
+
 var pal = 'kayak';
-var pal2 = pal.split("");
+;
 //  console.log(pal2) 
 
-if (pal2.length === pal2.length - 1) {
+// if (pal2.length === pal2.length-1){
 
-    return 'true'
-}
+//     return 'true'
+//   }
 
-for (var i = 0; i >= pal2.lenght; i++) {
+// for (var i = 0; i < pal2.lenght; i++) {
 
-} for (var i = pal2.string; i >= 0; i--) {
-
-    return
-
-}
+// } for (var i = pal2.string; i >= 0; i--) {
 
 
-
-// function isPalindrome(str) {
-
-// for(var i=0; i<pal.lenght;i++){
+//     return true
 
 // }
+
+ 
+
+// // function isPalindrome(str) {
+
+// // for(var i=0; i<pal.lenght;i++){
+
+// // }
 
 //     return
 // }
