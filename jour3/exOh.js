@@ -18,7 +18,7 @@ function exOh(str) {
     for (var i = 0; i <= str.length; i++) {
 
         if (str[i] === 'x') {
-            count1 += 1;
+            count1 =count1+ 1;
         } else if (str[i] === 'o') {
             count2 += 1;
         }
