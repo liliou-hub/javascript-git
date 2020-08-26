@@ -1,13 +1,17 @@
-var num=parseInt(process.argv[2])
+// console.log(parseInt(process.argv[2]))
 
+var num=parseInt(process.argv[2]);
 // console.log(num)
 
+for (var i=0;i<=10; i++) {
+    console.log(`${num} * ${i} = ${num * i}`);
+}
 
 
 
 
 
 
-// var nb=3; //je crée ma variable constante
-//     for (let i=0;i<=10;i++) 
-//     console.log(`${nb} * ${i} = ${nb * i}`);
+
+
+
