@@ -1,36 +1,68 @@
 'use strict'
 var str = 'abc';
 
+
 function rot13(str) {
-    // var result = ''
-    // for (var i = 0; i < str.length; i++) {
-    //     // console.log(str[i]);
-    //     result += String.fromCharCode(str.charCodeAt(i) + 13)
-    // }
-    var result = ''
-    
-    // var comptmin = 65
-    // var comptemax = 90
+    //     // var result = ''
+    //     // for (var i = 0; i < str.length; i++) {
+    //     //     // console.log(str[i]);
+    //     //     result += String.fromCharCode(str.charCodeAt(i) + 13)
+    //     // }
+    var result = '';
+    var minmaj=65
+    var maxmaj=90
+
     for (var i = 0; i < str.length; i++) {
 
-        if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
+        var strchar = str.charCodeAt(i);
 
-            // String.fromCharCode(str.charCodeAt(i) + 13)
+        if (strchar >= minmaj && strchar <= maxmaj) {
 
-        } else if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) {
-            // String.fromCharCode(str.charCodeAt(i) + 13)
-        } else  ((String.fromCharCode(str.charCodeAt(i) + 13)) > 90 && (String.fromCharCode(str.charCodeAt(i) + 13)) > 122){
+             String.fromCharCode(strchar + 13);
 
+        } else if(String.fromCharCode(strchar + 13) > maxmaj) {
 
-            result += String.fromCharCode(str.charCodeAt(i) + 13)-26
-        
+             String.fromCharCode(strchar + 13) - 26;
         }
+
+
+        // result +=String.fromCharCode(strchar + 13)-26; 
+
         
-
-    return result
     }
-
+    return result
 }
 
 console.log(rot13('AbcZ'))
-// String.fromCharCode( str.charCodeAt(i) + 13 )
+// // String.fromCharCode( str.charCodeAt(i) + 13 )
+
+
+// var str = 'abc';
+
+// function rot13(str) {
+//     // var result = ''
+//     // for (var i = 0; i < str.length; i++) {
+//     //     // console.log(str[i]);
+//     //     result += String.fromCharCode(str.charCodeAt(i) + 13)
+//     // }
+//     var result = ''
+//     var pattern1= /([A-Z])\w+/g;
+//     var pattern2= /([a-z])\w+/g;
+
+//     for (var i = 0; i < str.length; i++) {
+
+//         if(/([a-z])\w+/g){
+//             str.replace(/([a-z])\w+/g, String.fromCharCode(str.charCodeAt(i) + 13))
+
+//         }else if (/[A-Z])\w+/g){
+//             str.replace(/([A-Z])\w+/g, String.fromCharCode(str.charCodeAt(i) + 13))
+
+//         }
+
+
+//     }
+
+
+// }
+
+// console.log(rot13('AbcZ'))
