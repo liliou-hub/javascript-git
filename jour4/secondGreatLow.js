@@ -9,7 +9,7 @@ var test = [1, 42, 42, 180];
 
 function secondGreatLow(arr) {
     //verif start
-    if (arr.length <2) {
+    if (arr.length < 2) {
         return "l'array doit contenir au moins deux nombres"
     }
 
@@ -38,7 +38,7 @@ function secondGreatLow(arr) {
 
     //trouver grand
     var big2 = null;
-    for (i = arrOrdre.length; i >0 ; i--) {
+    for (i = arrOrdre.length; i > 0; i--) {
         if (arrOrdre[i] > arrOrdre[i - 1]) {
             big2 = arrOrdre[i - 1]
             break;

@@ -9,8 +9,8 @@ function rot13(str) {
     //     //     result += String.fromCharCode(str.charCodeAt(i) + 13)
     //     // }
     var result = '';
-    var minmaj=65
-    var maxmaj=90
+    var minmaj = 65
+    var maxmaj = 90
 
     for (var i = 0; i < str.length; i++) {
 
@@ -18,17 +18,17 @@ function rot13(str) {
 
         if (strchar >= minmaj && strchar <= maxmaj) {
 
-             String.fromCharCode(strchar + 13);
+            String.fromCharCode(strchar + 13);
 
-        } else if(String.fromCharCode(strchar + 13) > maxmaj) {
+        } else if (String.fromCharCode(strchar + 13) > maxmaj) {
 
-             String.fromCharCode(strchar + 13) - 26;
+            String.fromCharCode(strchar + 13) - 26;
         }
 
 
         // result +=String.fromCharCode(strchar + 13)-26; 
 
-        
+
     }
     return result
 }
