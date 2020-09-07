@@ -3,7 +3,7 @@ var num = 12;
 
 
 function simpleAdding(x) {
-    var total=0;
+    var total = 0;
 
 
     for (var i = 1; i <= x; i++) {

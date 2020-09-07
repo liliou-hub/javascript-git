@@ -10,4 +10,4 @@ function powerFunIter(num, power) {
 
 var resultat = powerFunIter(num, power)
 
-console.log(resultat)
+console.log(resultat);

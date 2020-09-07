@@ -21,8 +21,6 @@ function letterCapitalize(test) {
         // console.log(joined);
 
         stn[i] = joined;
-
-
     }
 
     total = stn.join(' ');

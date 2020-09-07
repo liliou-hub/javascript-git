@@ -1,22 +1,21 @@
-var num1=3
-var num2=122
+var num1 = 3;
+var num2 = 122;
 
-function checkNums(num1,num2){
-    if (num1<num2){
+function checkNums(num1, num2) {
+    if (num1 < num2) {
         console.log('num1 is lower than num2');
     }
-    else if (num1>num2){
+    else if (num1 > num2) {
         console.log('num1 is greater than num2');
     }
-    else if (num1=num2){
+    else if (num1 = num2) {
         console.log('equal');
     }
 }
 
-checkNums(num1,num2) 
+checkNums(num1, num2);
 
 
 
-console.log('salut')
+console.log('salut');
 
-  
