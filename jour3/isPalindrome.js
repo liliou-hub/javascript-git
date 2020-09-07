@@ -54,25 +54,25 @@
 
 function isPalindrome(str) {
 
-  var strInverse = ("");
-  
-  for (var i = 0; i < str.length; i++) {
-      // str += 1;
-      strInverse = str[i] + strInverse;
-      var str = 'eyes';
-  }
-  if (strInverse !== str) {
-  
-      return false;
-  
-  } else {
-  
-      return true;
-  
-  }
-  }
-  
-  console.log(isPalindrome('eyes'))
+    var strInverse = ("");
+
+    for (var i = 0; i < str.length; i++) {
+        // str += 1;
+        strInverse = str[i] + strInverse;
+        var str = 'eyes';
+    }
+    if (strInverse !== str) {
+
+        return false;
+
+    } else {
+
+        return true;
+
+    }
+}
+
+console.log(isPalindrome('eyes'))
 
 
 
