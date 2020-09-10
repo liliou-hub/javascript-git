@@ -21,11 +21,11 @@
 
 
 
-function formatDate(date) { 
-    var timestamp= date.getTime()
+function formatDate(date) {
+    var timestamp = date.getTime()
     var diff = Date.now() - timestamp;
-    var age = new Date(diff); 
-  
+    var age = new Date(diff);
+
     return Math.abs(age.getUTCFullYear() - 1970);
 }
 
