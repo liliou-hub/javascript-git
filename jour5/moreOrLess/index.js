@@ -7,36 +7,33 @@
 // QUESTION: lorsque result.n===num il ne prend pas en copmpte l'instruction
 
 
-function randomNumber(max) { 
+function randomNumber(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-console.log(randomNumber(100));
-
-var num = randomNumber(100);
+// console.log(randomNumber(100)); ici pas bon car ca sort un num nouveau a chaque fois
 
 var prompt = require('prompt');
+var num = randomNumber(100);
 
 prompt.start();
 
+
 function displayPrompt() {
-
-  var num = randomNumber(100);
-
+  console.log(num);
 
   prompt.get({ name: 'n', description: 'Quel est le nombre ?' }, function (
     err,
     result
-   
   ) {
     if (result.n == num) {
-      console.log('Bravo, vous avez trouve le nombre mystère !!!') ;  
+      console.log('Bravo, vous avez trouve le nombre mystère !!!');
     } else if (result.n > num) {
       console.log('cest moins!');
       displayPrompt()
     } else if (result.n < num) {
       console.log('cest plus!')
       displayPrompt()
-      ;
+        ;
     }
     console.log(result)
     console.log(result.n)

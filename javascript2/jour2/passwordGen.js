@@ -3,7 +3,7 @@ function passwordGen(num) {
     var max = 90;
     var password = '';
 
-    if (6 < num < 15) {
+    if (6 < num < 15) {/*pas possible*/
         return 'error';
     }
 

@@ -44,23 +44,26 @@ function BlackJack() {
         result
     ) {
         if (result.q == 'yes') {
-            return CardPlayer
+            return CardPlayer/*ici ajouter les conditions*//*ajouter var compte*/
+            BlackJack();
         }
+
+       
 
         if (ScorePlayer > BankMax) {
             console.log('Score bank' + ScoreBank + 'YOU LOOSE');
         } else if (ScorePlayer == BankMax) {
             console.log('BLACK JACK!!!!! YOU\'RE RICH!!!');
-            BlackJack();
+    
         } else if (ScorePlayer > ScoreBank) {
             console.log('Score bank' + ScoreBank + 'YOU WIN');
-            BlackJack();
+    
         } else if (ScorePlayer < ScoreBank) {
             console.log('Score bank' + ScoreBank + 'YOU LOOSE');
-            BlackJack();
+    
         } else if (ScorePlayer == ScoreBank) {
             console.log('Score bank' + ScoreBank + 'YOU LOOSE');
-            BlackJack();
+    
         }
         // console.log(result)
         // console.log(result.ScorePlayer)

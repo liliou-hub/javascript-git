@@ -29,7 +29,7 @@ function secondGreatLow(arr) {
 
     //trouver petit
     var small2 = null;
-    for (i = 0; i < arrOrdre.length; i++) {
+    for (var i = 0; i < arrOrdre.length; i++) {
         if (arrOrdre[i] < arrOrdre[i + 1]) {
             small2 = arrOrdre[i + 1]
             break;
@@ -38,7 +38,7 @@ function secondGreatLow(arr) {
 
     //trouver grand
     var big2 = null;
-    for (i = arrOrdre.length; i > 0; i--) {
+    for (var i = arrOrdre.length; i > 0; i--) {
         if (arrOrdre[i] > arrOrdre[i - 1]) {
             big2 = arrOrdre[i - 1]
             break;
@@ -51,4 +51,4 @@ function secondGreatLow(arr) {
 }
 
 console.log(secondGreatLow(test));
-// console.log([small2, big2])
+// console.log([small2], [big2])

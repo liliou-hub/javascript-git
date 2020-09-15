@@ -1,8 +1,8 @@
 'use strict'
 
 function getVariable(str){
-    return 'some text'
+    return str
 }
-var result=getVariable();
+var result=getVariable('some text');
 
 console.log(result);

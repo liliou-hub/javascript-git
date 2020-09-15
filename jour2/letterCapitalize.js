@@ -14,9 +14,9 @@ function letterCapitalize(test) {
         var mot = stn[i];
         mot.substr(1, sentence.length);
 
-        let one = stn[i].charAt(0).toUpperCase();
-        let two = mot.substr(1, sentence.length);
-        let joined = one + two; joined;
+        var one = stn[i].charAt(0).toUpperCase();
+        var two = mot.substr(1, sentence.length);
+        var joined = one + two; joined;
 
         // console.log(joined);
 

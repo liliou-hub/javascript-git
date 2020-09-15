@@ -4,7 +4,7 @@
 
 // console.log(process.argv[2]);
 
-var str = Hello - LOL
+var str = 'Hello - LOL'
 
 function swapeCase(str) {
 

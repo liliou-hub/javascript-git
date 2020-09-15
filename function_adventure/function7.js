@@ -21,12 +21,12 @@
 // console.log(result2)
 
 
-    function gethello(str){
-        return 'hello' + str;
-    }
+function gethello(str) {
+    return 'hello' + str;
+}
 
-    var result1=gethello('konexio');
-    var result2=gethello('jean');
-    
-    console.log(result1);
-     console.log(result2);
+var result1 = gethello('konexio');
+var result2 = gethello('jean');
+
+console.log(result1);
+console.log(result2);

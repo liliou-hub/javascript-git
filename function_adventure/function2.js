@@ -1,9 +1,9 @@
 'use strict'
 
-var str='some text'
 
-function displayVariable(str){
-    return console.log(str)
+
+function displayVariable(str) {
+    console.log(str)
 }
 
-displayVariable(str)
+displayVariable('some text')
